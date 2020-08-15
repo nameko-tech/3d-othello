@@ -3,8 +3,15 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Top from './screens/Top'
 import Play from './screens/Play'
 import end from './screens/end'
+import { socket } from './Socket'
 
-function App() {
+const App = () => {
+  useEffect(() => {
+      socket.on('connect',()=>{
+        console.log('connected!')
+      })
+  }, [])
+
   return (
     <div>
       <BrowserRouter>
