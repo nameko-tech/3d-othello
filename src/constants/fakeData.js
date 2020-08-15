@@ -6,307 +6,306 @@ export const fakeObject = {
     [
       // 1列目
       [
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ]
     ],
     [
       // 1列目
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ]
     ],
     [
       // 1列目
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: 1, can_place: true },
+        { piece: 0, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: 0, can_place: true },
+        { piece: 1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ]
     ],
     [
       // 1列目
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: 0, can_place: true },
+        { piece: 1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: 1, can_place: true },
+        { piece: 0, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
+      ]
+    ],
+    [
+      [
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
+      ],
+      [
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
+      ],
+      [
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
+      ],
+      [
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
+      ],
+      [
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
+      ],
+      [
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ]
     ],
     [
       // 1列目
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ],
       [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
-      ]
-    ],
-    [
-      // 1列目
-      [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
-      ],
-      [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
-      ],
-      [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
-      ],
-      [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
-      ],
-      [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
-      ],
-      [
-        { piece: 0, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 0, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true },
+        { piece: -1, can_place: true }
       ]
     ]
   ]

@@ -1,14 +1,13 @@
-import { Link, useHistory } from 'react-router-dom'
-import React, { useState, useEffect } from 'react'
-import socketIOClient from 'socket.io-client'
+import React, { useState, useContext } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import axios from 'axios'
-import { url } from '../Socket'
+import { socket } from '../App'
+import { OthelloContext } from '../constants/context'
+
+/* eslint react-hooks/exhaustive-deps:0 */
 
 const Top = () => {
-  const history = useHistory()
   const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
@@ -25,25 +24,17 @@ const Top = () => {
 
   const classes = useStyles()
 
-  const [roomName, setRoomName] = useState('')
+  const { roomName, setRoomName } = useContext(OthelloContext)
 
   const JoinRoom = (e) => {
+    console.log('おくるよ！')
     e.preventDefault()
-    // history.push('/play')
+
     if (roomName === '') {
       return alert('だめでええええす')
     }
     console.log(`${roomName} に参加するよ～`)
-    axios
-      .post(url, { roomName: roomName })
-      .then((results) => {
-        console.log(results)
-        // 通信に成功してレスポンスが返ってきた時に実行したい処理
-      })
-      .catch((error) => {
-        console.error(error)
-        // 通信に失敗してレスポンスが返ってこなかった時に実行したい処理
-      })
+    socket.emit('room', { roomName: roomName })
   }
 
   return (
