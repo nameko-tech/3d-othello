@@ -6,12 +6,12 @@ export const fakeObject = {
     [
       // 1列目
       [
-        { piece: 0, canPlace: true },
         { piece: -1, canPlace: true },
         { piece: -1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 1, canPlace: true },
-        { piece: 1, canPlace: true }
+        { piece: -1, canPlace: true },
+        { piece: -1, canPlace: true },
+        { piece: -1, canPlace: true },
+        { piece: -1, canPlace: true }
       ],
       [
         { piece: 0, canPlace: true },

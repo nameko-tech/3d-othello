@@ -1,5 +1,6 @@
 // with ES6 import
-import io from 'socket.io-client';
+import io from 'socket.io-client'
 
-export const socket = io('https://nameko-3d-othello-backend.herokuapp.com/');
+export const url = process.env.NODE_ENV === 'development' ? 'localhost:5000' : 'https://nameko-3d-othello-backend.herokuapp.com/ '
 
+export const socket = io(url)
