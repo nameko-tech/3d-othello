@@ -25,31 +25,33 @@ const Top = () => {
   const classes = useStyles()
 
   const { roomName, setRoomName } = useContext(OthelloContext)
-
+  const [submitting, setSubmitting] = useState(false)
   const JoinRoom = (e) => {
-    console.log('おくるよ！')
     e.preventDefault()
 
     if (roomName === '') {
-      return alert('だめでええええす')
+      return alert('部屋名を入れてください')
     }
+    setSubmitting(true)
     console.log(`${roomName} に参加するよ～`)
     socket.emit('room', { roomName: roomName })
   }
 
   return (
     <div style={{ width: '95%', margin: '0 auto' }}>
-      topだよ
-      <form className={classes.root} noValidate autoComplete="off" onSubmit={JoinRoom}>
-        <TextField onChange={(e) => setRoomName(e.target.value)} id="filled-basic" label="Filled" variant="filled" />
-        <div className={classes.button} style={{ textAlign: 'right' }}>
-          {/* <Button variant="contained">Default</Button> */}
-          <Button variant="contained" color="primary" type="submit">
-            あそぶ
-          </Button>
-          <Button onClick={() => console.log(roomName)}>a</Button>
-        </div>
-      </form>
+      <div style={{ textAlign: 'center', background: 'lightgray', borderRadius: '6px', margin: '3em auto', width: '80%' }}>
+        <form className={classes.root} noValidate autoComplete="off" onSubmit={JoinRoom}>
+          <div style={{ height: '3vh' }} />
+          <TextField onChange={(e) => setRoomName(e.target.value)} id="filled-basic" label="部屋名" variant="filled" />
+          <div style={{ textAlign: 'center', margin: '0 auto' }}>
+            <div style={{ height: '2vh' }} />
+            <Button variant="contained" type="submit">
+              あそぶ
+            </Button>
+          </div>
+          <div style={{ height: '3vh' }} />
+        </form>
+      </div>
     </div>
   )
 }

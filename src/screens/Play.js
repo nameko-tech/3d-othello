@@ -3,6 +3,7 @@ import { Canvas, useFrame, extend, useThree } from 'react-three-fiber'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { socket } from '../App'
 import { OthelloContext } from '../constants/context'
+import { fakeObject } from '../constants/fakeData'
 extend({ OrbitControls })
 
 const CameraControls = () => {
@@ -11,7 +12,6 @@ const CameraControls = () => {
     gl: { domElement }
   } = useThree()
   camera.position.set(0, 0, 8)
-  console.log(camera)
   // Ref to the controls, so that we can update them on every frame using useFrame
   const controls = useRef()
   useFrame((state) => {
@@ -34,24 +34,34 @@ const CameraControls = () => {
 }
 
 const Box = (props) => {
-  const { piece, xyz, setSelectedPiece } = props
+  const { piece, xyz, setSelectedPiece, othelloBoard, myColor } = props
   // This reference will give us direct access to the mesh
   const mesh = useRef()
   // Set up state for the hovered and active state
   const [active, setActive] = useState(false)
   const [hover, setHover] = useState(false)
+
+  const clickPiece = (e) => {
+    setActive(!active)
+    if (othelloBoard && othelloBoard.turn !== myColor) {
+      alert('相手の番です')
+      return
+    }
+    setSelectedPiece(xyz)
+    e.stopPropagation()
+  }
+
   return (
     <mesh
       {...props}
       ref={mesh}
       scale={[0.3, 0.3, 0.3]}
-      onClick={(e) => {
-        setActive(!active)
-        setSelectedPiece(xyz)
-        e.stopPropagation()
-      }}
+      onClick={clickPiece}
       onPointerOver={(e) => {
         e.stopPropagation()
+        if (piece.piece !== -1) {
+          return
+        }
         setHover(true)
       }}
       onPointerOut={(e) => setHover(false)}
@@ -67,35 +77,43 @@ const Box = (props) => {
 }
 
 const Play = () => {
-  const { othelloBoard, setSelectedPiece } = useContext(OthelloContext)
-  console.log(othelloBoard)
+  const { othelloBoard, setSelectedPiece, myColor } = useContext(OthelloContext)
   return (
-    <div style={{ border: '2px solid green', width: '95vw', margin: '0 auto', height: '80vh', backgroundColor: '#bcaaa4' }}>
-      <Canvas>
-        {/* <ambientLight color="0x222222" /> */}
-        <CameraControls />
-        <pointLight position={[100, 100, 100]} />
-        <pointLight position={[100, -100, -100]} />
-        <pointLight position={[-100, 100, -100]} />
-        <pointLight position={[-100, -100, 100]} />
-        {othelloBoard && othelloBoard.board.board.length
-          ? othelloBoard.board.board.map((surface, i) => {
-              return surface.map((row, j) => {
-                return row.map((piece, k) => {
-                  return (
-                    <Box
-                      setSelectedPiece={setSelectedPiece}
-                      xyz={[i, j, k]}
-                      piece={piece}
-                      key={`${i}${j}${k}`}
-                      position={[i - 2.5, j - 2.5, k - 2.5]}
-                    />
-                  )
+    <div>
+      <div style={{ width: '90%', margin: '0 auto', position: 'relative', color: 'lightgrey' }}>
+        <h4 style={{ display: 'inline-block', height: '2vh' }}>{othelloBoard && othelloBoard.turn === myColor ? 'きみの番' : '相手の番'}</h4>
+        <h4 style={{ position: 'absolute', top: 0, right: 0, display: 'inline-block', height: '2vh' }}>
+          {othelloBoard && myColor === 'white' ? 'あなたは白' : 'あなたは黒'}
+        </h4>
+      </div>
+      <div style={{ borderRadius: '6px', width: '95vw', margin: '0 auto', height: '75vh', backgroundColor: '#bcaaa4' }}>
+        <Canvas>
+          <CameraControls />
+          <pointLight position={[100, 100, 100]} />
+          <pointLight position={[100, -100, -100]} />
+          <pointLight position={[-100, 100, -100]} />
+          <pointLight position={[-100, -100, 100]} />
+          {othelloBoard && othelloBoard.board.board.length
+            ? othelloBoard.board.board.map((surface, i) => {
+                return surface.map((row, j) => {
+                  return row.map((piece, k) => {
+                    return (
+                      <Box
+                        setSelectedPiece={setSelectedPiece}
+                        xyz={[i, j, k]}
+                        piece={piece}
+                        key={`${i}${j}${k}`}
+                        position={[i - 2.5, j - 2.5, k - 2.5]}
+                        othelloBoard={othelloBoard}
+                        myColor={myColor}
+                      />
+                    )
+                  })
                 })
               })
-            })
-          : ''}
-      </Canvas>
+            : ''}
+        </Canvas>
+      </div>
     </div>
   )
 }

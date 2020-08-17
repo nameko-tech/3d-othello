@@ -13,15 +13,10 @@ const OthelloContextProvider = (props) => {
 
   useEffect(() => {
     if (selectedPiece.length) {
-      socket.emit('game', { piece: selectedPiece, room: roomName })
+      socket.emit('game', { piece: selectedPiece, room: roomName, color: myColor })
       setSelectedPiece([])
     }
   }, [selectedPiece])
-
-  // const [selectedRestaurant, setSelectedRestaurant] = useState(null) // str
-  // const [determinedCart, setDeterminedCart] = useState(null)
-  // const [selectedTime, setSelectedTime] = useState('')
-  // const [selectedTimeLabel, setSelectedTimeLabel] = useState('')
 
   return (
     <OthelloContext.Provider
